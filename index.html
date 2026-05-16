@@ -79,10 +79,10 @@
       </section>
 
       <section class="signup-section">
-        <div class="signup-inner">
-          <p class="eyebrow">Launching soon</p>
+        <div class="signup-inner" id="signup-inner">
+          <p class="eyebrow">Free disc golf tool</p>
           <h2>Most bag advice<br>is wrong.</h2>
-          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right, because it's based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. Join the list and we'll let you know when we launch, share things worth knowing about bags and discs, and occasionally point you toward something genuinely useful. No filler.</p>
+          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right — because it is based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. Get updates on new features and things worth knowing about bags and discs. No filler.</p>
 
           <form class="signup-form" id="signup-form" novalidate>
             <div class="signup-fields">
@@ -116,7 +116,7 @@
       </section>
 
       <footer class="site-footer">
-        <p>&copy; 2026 Golf With Discs. BagIQ is a standalone product licensed for white-label use by disc golf retailers and brands. <a href="mailto:hello@bagiq.app">hello@bagiq.app</a></p>
+        <p>&copy; 2026 Golf With Discs. BagIQ is a standalone product licensed for white-label use by disc golf retailers and brands. <a href="mailto:hello@bagiq.app">hello@bagiq.app</a> &middot; <a href="/privacy.html">Privacy</a></p>
       </footer>
     </main>
     <script>
@@ -151,8 +151,11 @@
             });
             var data = await res.json();
             if (data.ok) {
-              form.style.display = "none";
-              showMessage("You're on the list. We'll be in touch the moment we launch.", "success");
+              document.getElementById("signup-inner").innerHTML =
+                '<p class="eyebrow">You\'re on the list</p>' +
+                '<h2>Good call.</h2>' +
+                '<p class="signup-body">We\'ll share useful things about bags and discs, and tell you when anything changes worth knowing about. In the meantime, the app is live now. No account required.</p>' +
+                '<a href="https://app.bagiq.app/" class="cta-btn" style="display:inline-block;margin-top:8px">Open BagIQ &rarr;</a>';
             } else {
               showMessage("Something went wrong. Please try again.", "error");
               btn.disabled = false;
@@ -161,7 +164,7 @@
           } catch (_) {
             showMessage("Could not connect. Please try again.", "error");
             btn.disabled = false;
-            btn.textContent = "Get the occasional email";
+            btn.textContent = "Join the list";
           }
         });
 
