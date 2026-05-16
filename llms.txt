@@ -1,0 +1,29 @@
+# BagIQ
+
+> BagIQ is a disc golf bag decision engine. It spots gaps, overlap, and recommends the right disc based on how you actually throw.
+
+## What it does
+
+BagIQ analyses a disc golf bag and returns:
+- Gap analysis: shot types the bag cannot reliably execute, with a specific disc recommendation for each gap
+- Overlap detection: discs covering the same effective slot, with a recommendation on which to cut
+- Disc Detox: a swipe-through tool to keep or cut each disc
+- Minimal bag: the smallest possible bag that covers every shot type in use
+
+## How it works
+
+BagIQ asks how you throw each disc (backhand/forehand, shot shape, use case), then maps the bag against 16 functional shot slots. The analysis is based on actual throw behaviour, not flight numbers or manufacturer specs.
+
+## Key facts
+
+- Free to use, no account required
+- Bag data stored locally in the browser
+- Powered by DiscList data (thedisclist.com)
+- Built by Golf With Discs (golfwithdiscs.com)
+- Available for white-label licensing by disc golf retailers and brands
+
+## URLs
+
+- Landing page: https://bagiq.app/
+- App: https://app.bagiq.app/
+- Contact: hello@bagiq.app
