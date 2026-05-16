@@ -81,9 +81,9 @@
 
       <section class="signup-section">
         <div class="signup-inner">
-          <p class="eyebrow">The bag update</p>
-          <h2>The rare email<br>worth reading.</h2>
-          <p class="signup-body">An unpopular opinion: most newsletters send too often. They fill space because the calendar demands it, not because they have anything useful to say. We're taking the opposite approach — only emailing when we have something genuinely worth knowing about your bag, a disc worth considering, or a pattern we've spotted in the data. Less often than you'd expect. More useful than you'd hope.</p>
+          <p class="eyebrow">Launching soon</p>
+          <h2>Most bag advice<br>is wrong.</h2>
+          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right — because it's based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. We're nearly ready. Leave your email and we'll tell you the moment we go live — nothing else.</p>
 
           <form class="signup-form" id="signup-form" novalidate>
             <div class="signup-fields">
@@ -97,12 +97,12 @@
                 required
                 aria-required="true"
               >
-              <button type="submit" class="signup-btn" id="signup-btn">Get the occasional email</button>
+              <button type="submit" class="signup-btn" id="signup-btn">Notify me when it's ready</button>
             </div>
             <div class="signup-consent">
               <label class="consent-label">
                 <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
-                <span>Send me occasional bag insights, disc recommendations, and BagIQ updates. I can unsubscribe any time.</span>
+                <span>Notify me when BagIQ launches. That's it. I can unsubscribe any time.</span>
               </label>
             </div>
             <!-- Honeypot — leave blank -->
@@ -141,7 +141,7 @@
           }
 
           btn.disabled = true;
-          btn.textContent = "Signing you up…";
+          btn.textContent = "Adding you to the list…";
           msg.textContent = "";
 
           try {
@@ -153,11 +153,11 @@
             var data = await res.json();
             if (data.ok) {
               form.style.display = "none";
-              showMessage("You're in. Expect something worth reading.", "success");
+              showMessage("You're on the list. We'll be in touch the moment we launch.", "success");
             } else {
               showMessage("Something went wrong — please try again.", "error");
               btn.disabled = false;
-              btn.textContent = "Get the occasional email";
+              btn.textContent = "Notify me when it's ready";
             }
           } catch (_) {
             showMessage("Could not connect — please try again.", "error");
