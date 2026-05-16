@@ -1,0 +1,3 @@
+Contact: mailto:hello@bagiq.app
+Expires: 2027-05-16T00:00:00.000Z
+Preferred-Languages: en
