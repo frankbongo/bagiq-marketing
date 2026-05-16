@@ -20,9 +20,6 @@
     <meta name="twitter:image" content="https://app.bagiq.app/assets/images/logo.png">
     <link rel="icon" type="image/png" href="https://app.bagiq.app/assets/images/favicon.png">
     <link rel="apple-touch-icon" href="https://app.bagiq.app/assets/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
@@ -83,7 +80,7 @@
         <div class="signup-inner">
           <p class="eyebrow">Launching soon</p>
           <h2>Most bag advice<br>is wrong.</h2>
-          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right, because it's based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. We're nearly ready. Leave your email and we'll tell you the moment we go live. Nothing else.</p>
+          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right, because it's based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. Join the list and we'll let you know when we launch, share things worth knowing about bags and discs, and occasionally point you toward something genuinely useful. No filler.</p>
 
           <form class="signup-form" id="signup-form" novalidate>
             <div class="signup-fields">
@@ -97,12 +94,12 @@
                 required
                 aria-required="true"
               >
-              <button type="submit" class="signup-btn" id="signup-btn">Notify me when it's ready</button>
+              <button type="submit" class="signup-btn" id="signup-btn">Join the list</button>
             </div>
             <div class="signup-consent">
               <label class="consent-label">
                 <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
-                <span>Notify me when BagIQ launches. That's it. I can unsubscribe any time.</span>
+                <span>Sign me up. I want to know when BagIQ launches and get the occasional update on bags and discs. I can unsubscribe any time.</span>
               </label>
             </div>
             <!-- Honeypot: leave blank -->
@@ -141,7 +138,7 @@
           }
 
           btn.disabled = true;
-          btn.textContent = "Adding you to the list…";
+          btn.textContent = "Joining the list…";
           msg.textContent = "";
 
           try {
@@ -157,7 +154,7 @@
             } else {
               showMessage("Something went wrong. Please try again.", "error");
               btn.disabled = false;
-              btn.textContent = "Notify me when it's ready";
+              btn.textContent = "Join the list";
             }
           } catch (_) {
             showMessage("Could not connect. Please try again.", "error");
