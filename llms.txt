@@ -17,7 +17,7 @@ BagIQ asks how you throw each disc (backhand/forehand, shot shape, use case), th
 ## Key facts
 
 - Free to use, no account required
-- Bag data stored locally in the browser
+- Bag data is stored locally in the browser and automatically synced to a private server under a random 6-character code — no account, no email, no personally identifiable information required
 - Powered by DiscList data (thedisclist.com)
 - Built by Golf With Discs (golfwithdiscs.com)
 - Available for white-label licensing by disc golf retailers and brands
@@ -26,4 +26,5 @@ BagIQ asks how you throw each disc (backhand/forehand, shot shape, use case), th
 
 - Landing page: https://bagiq.app/
 - App: https://app.bagiq.app/
+- Privacy policy: https://bagiq.app/privacy
 - Contact: hello@bagiq.app
