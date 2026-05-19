@@ -20,6 +20,9 @@
     <meta name="twitter:image" content="https://app.bagiq.app/assets/images/logo.png">
     <link rel="icon" type="image/png" href="https://app.bagiq.app/assets/images/favicon.png">
     <link rel="apple-touch-icon" href="https://app.bagiq.app/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
       {
@@ -44,135 +47,524 @@
       }
     </script>
   </head>
-  <body>
+  <body class="bagiq-page">
     <main class="page">
-      <header class="site-header">
-        <a href="https://app.bagiq.app/" aria-label="BagIQ — launch the app">
-          <img src="https://app.bagiq.app/assets/images/logo.png" alt="BagIQ" class="site-logo">
-        </a>
-      </header>
+      <!-- NAV -->
+      <nav class="nav">
+        <img src="bagiq-handoff/assets/logo.png" alt="BagIQ" class="nav-logo" height="36">
+        <div class="nav-links">
+          <a href="#bagmap" class="nav-link">The Bag Map</a>
+          <a href="#detox" class="nav-link">Disc Detox</a>
+          <a href="#how" class="nav-link">How it works</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="https://app.bagiq.app/" class="b-pill b-pill-p b-pill-sm">Launch BagIQ →</a>
+        </div>
+      </nav>
 
-      <section class="hero">
-        <p class="eyebrow">Disc golf bag decision engine</p>
-        <h1>Fix your bag in<br>under a minute.</h1>
-        <p class="strapline">BagIQ spots gaps, overlap, and the exact disc that fixes it. Based on how you actually throw, not what the disc says it should do.</p>
-        <a href="https://app.bagiq.app/" class="cta-btn" aria-label="Launch BagIQ app">Launch BagIQ &rarr;</a>
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="b-container-narrow" style="text-align: center;">
+          <div class="identity-chip" id="identity-chip">
+            <span class="identity-dot"></span>
+            <span class="identity-text">Overstable-heavy bag missing a reliable straight flyer</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Fix your bag<br>in under a minute.
+          </h1>
+
+          <p class="hero-description">
+            BagIQ spots gaps, overlap, and the exact disc that fixes it.
+            Based on how you actually throw, not what the disc says it should do.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="https://app.bagiq.app/" class="b-pill b-pill-p">Launch BagIQ →</a>
+            <a href="#bagmap" class="b-pill b-pill-o">See a sample bag</a>
+          </div>
+
+          <div class="trust-pill">
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span class="trust-label">Free</span>
+              <span class="trust-detail">forever</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span class="trust-label">No account</span>
+              <span class="trust-detail">no signup</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <span class="trust-check">✓</span>
+              <span class="trust-label">Any device</span>
+              <span class="trust-detail">mobile, tablet, desktop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Preview -->
+        <div class="product-preview" id="bagmap">
+          <div class="preview-inner">
+            <div class="preview-left">
+              <div class="identity-banner">
+                <div class="banner-decoration"></div>
+                <div class="banner-content">
+                  <div class="banner-name">Chaos bag</div>
+                  <div class="banner-tagline">There are useful discs in here, but too many are arguing for the same job.</div>
+                  <div class="banner-coverage">
+                    <span>Coverage</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="coverage-bar">
+                    <div class="coverage-fill" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bag-map-container">
+                <svg class="bag-map" viewBox="0 0 620 400" width="620" height="400">
+                  <!-- Grid lines and axes will be populated by JS -->
+                </svg>
+              </div>
+            </div>
+
+            <div class="preview-right">
+              <div class="preview-caption">Fill the gap</div>
+              <h3 class="preview-title">safe forehand approach</h3>
+              <p class="preview-body">This stops you trying to force a touchy disc into a windy approach. Closest option is the Omega, but you do not fully trust it for this job.</p>
+
+              <div class="recommendation-card">
+                <div class="rec-hero">
+                  <div class="rec-stability">OVERSTABLE</div>
+                  <div class="rec-circle" style="background: #fff; color: #3498DB;">ZO</div>
+                  <div class="rec-brand">Discraft</div>
+                  <div class="rec-name">Zone</div>
+                  <div class="rec-category">Midrange</div>
+                </div>
+                <div class="rec-content">
+                  <div class="flight-chips">
+                    <div class="flight-chip flight-chip-speed">
+                      <div class="chip-label">SPEED</div>
+                      <div class="chip-value">4</div>
+                    </div>
+                    <div class="flight-chip flight-chip-glide">
+                      <div class="chip-label">GLIDE</div>
+                      <div class="chip-value">3</div>
+                    </div>
+                    <div class="flight-chip flight-chip-turn">
+                      <div class="chip-label">TURN</div>
+                      <div class="chip-value">0</div>
+                    </div>
+                    <div class="flight-chip flight-chip-fade">
+                      <div class="chip-label">FADE</div>
+                      <div class="chip-value">3</div>
+                    </div>
+                  </div>
+                  <p class="rec-description">This gives you a safer forehand option in wind.</p>
+                  <a href="#" class="rec-link">DiscList #16 →</a>
+                  <div class="rec-tags">
+                    <span class="tag">Assured Fade</span>
+                    <span class="tag">Headwind Safe</span>
+                    <span class="tag">Utility Fade</span>
+                    <span class="tag">?</span>
+                  </div>
+                  <div class="rec-ctas">
+                    <button class="b-pill b-pill-p" style="width: 100%; height: 44px; font-size: 14px;">Where to buy</button>
+                    <button class="b-pill b-pill-o" style="width: 100%; height: 44px; font-size: 14px;">+ Add to bag</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="features">
-        <div class="feature-card">
-          <h2>Gap analysis</h2>
-          <p>Find the shot types your bag can't reliably execute and get a specific disc recommendation to fill each gap.</p>
-        </div>
-        <div class="feature-card">
-          <h2>Overlap detection</h2>
-          <p>Spot redundant discs covering the same effective slot. Keep the one that fits your game, remove the noise.</p>
-        </div>
-        <div class="feature-card">
-          <h2>Disc Detox</h2>
-          <p>Swipe through every disc in your bag. Keep or cut. Get to a tighter, more intentional setup.</p>
-        </div>
-        <div class="feature-card">
-          <h2>Minimal bag</h2>
-          <p>Generate the smallest possible bag that covers every shot type you need. Great for travel or casual rounds.</p>
+      <hr class="b-hr">
+
+      <!-- THREE FEATURES -->
+      <section class="features-section">
+        <div class="b-container">
+          <div class="features-header">
+            <p class="b-eyebrow">Decision engine, not inventory tracker</p>
+            <h2 class="features-headline">BagIQ answers three questions every disc golfer asks.</h2>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <span class="b-flight b-flight-gap">Gap analysis</span>
+              <h3>What's missing?</h3>
+              <p>Your bag has shots you cannot reliably make. BagIQ tells you which slot is empty and what kind of disc fills it.</p>
+              <div class="feature-visual">
+                <svg viewBox="0 0 300 180">
+                  <rect x="0" y="0" width="300" height="180" fill="#FBF7F0" rx="6" />
+                  <!-- Grid lines -->
+                  <line x1="30" y1="18" x2="30" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="98" y1="18" x2="98" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="166" y1="18" x2="166" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="234" y1="18" x2="234" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="270" y1="18" x2="270" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="30" y1="90" x2="270" y2="90" stroke="#D9CCB8" />
+                  <!-- Gap markers -->
+                  <circle cx="135" cy="45" r="20" fill="rgba(211,47,47,0.06)" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="4 3" />
+                  <text x="135" y="47" font-size="16" fill="#B12A2A" text-anchor="middle" font-weight="500">+</text>
+                  <text x="135" y="61" font-size="8" fill="#B12A2A" text-anchor="middle" font-weight="800" letter-spacing="0.04em">OS FW</text>
+                  <circle cx="205" cy="135" r="20" fill="rgba(211,47,47,0.06)" stroke="#D32F2F" stroke-width="1.5" stroke-dasharray="4 3" />
+                  <text x="205" y="137" font-size="16" fill="#B12A2A" text-anchor="middle" font-weight="500">+</text>
+                  <text x="205" y="151" font-size="8" fill="#B12A2A" text-anchor="middle" font-weight="800" letter-spacing="0.04em">US DRV</text>
+                  <!-- Discs -->
+                  <circle cx="53" cy="90" r="13" fill="#27AE60" stroke="#fff" stroke-width="2" />
+                  <text x="53" y="94" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">A</text>
+                  <circle cx="98" cy="54" r="13" fill="#3498DB" stroke="#fff" stroke-width="2" />
+                  <text x="98" y="58" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">Z</text>
+                  <circle cx="121" cy="88" r="13" fill="#3498DB" stroke="#fff" stroke-width="2" />
+                  <text x="121" y="92" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">CC</text>
+                  <circle cx="166" cy="59" r="13" fill="#E67E22" stroke="#fff" stroke-width="2" />
+                  <text x="166" y="63" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">TB</text>
+                  <circle cx="247" cy="57" r="13" fill="#7C0236" stroke="#fff" stroke-width="2" />
+                  <text x="247" y="61" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">W</text>
+                  <text x="150" y="168" font-size="9" fill="#4A4842" text-anchor="middle" font-weight="800" letter-spacing="0.14em">SPEED →</text>
+                </svg>
+              </div>
+              <p class="feature-caption">Pink + markers show shots your bag can't cover.</p>
+            </div>
+
+            <div class="feature-card">
+              <span class="b-flight b-flight-speed">Overlap</span>
+              <h3>What's redundant?</h3>
+              <p>Two discs doing the same job? Disc Detox compares them side by side so you know which one to keep.</p>
+              <div class="feature-visual">
+                <svg viewBox="0 0 300 180">
+                  <rect x="0" y="0" width="300" height="180" fill="#FBF7F0" rx="6" />
+                  <!-- Grid -->
+                  <line x1="30" y1="18" x2="30" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="98" y1="18" x2="98" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="166" y1="18" x2="166" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="234" y1="18" x2="234" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="270" y1="18" x2="270" y2="162" stroke="#ECE0CC" stroke-dasharray="2 3" />
+                  <line x1="30" y1="90" x2="270" y2="90" stroke="#D9CCB8" />
+                  <!-- Overlap ellipse -->
+                  <ellipse cx="98" cy="67" rx="24" ry="18" fill="rgba(230,126,34,0.08)" stroke="#E67E22" stroke-width="1.5" stroke-dasharray="3 3" />
+                  <text x="98" y="45" font-size="9" fill="#C66510" text-anchor="middle" font-weight="800" letter-spacing="0.06em">OVERLAP</text>
+                  <!-- Discs -->
+                  <circle cx="53" cy="90" r="13" fill="#27AE60" stroke="#fff" stroke-width="2" />
+                  <text x="53" y="94" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">A</text>
+                  <circle cx="90" cy="59" r="13" fill="#3498DB" stroke="#fff" stroke-width="2" />
+                  <text x="90" y="63" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">Z</text>
+                  <circle cx="109" cy="67" r="13" fill="#3498DB" stroke="#fff" stroke-width="2" />
+                  <text x="109" y="71" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">G</text>
+                  <circle cx="247" cy="65" r="13" fill="#7C0236" stroke="#fff" stroke-width="2" />
+                  <text x="247" y="69" font-size="11" fill="#fff" text-anchor="middle" font-weight="800" font-family="Manrope">W</text>
+                  <text x="150" y="168" font-size="9" fill="#4A4842" text-anchor="middle" font-weight="800" letter-spacing="0.14em">SPEED →</text>
+                </svg>
+              </div>
+              <p class="feature-caption">Two discs in the same slot get flagged for Detox.</p>
+            </div>
+
+            <div class="feature-card">
+              <span class="b-flight b-flight-fade">Next disc</span>
+              <h3>What should I buy?</h3>
+              <p>DiscList™ picks based on how you actually throw — with live retailer stock and price.</p>
+              <div class="feature-visual">
+                <div style="background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 14px;">
+                  <div style="font-family: Manrope; font-weight: 800; font-size: 13px; color: #111; margin-bottom: 10px;">DiscList™ picks for your gaps</div>
+                  <div style="padding: 8px 10px; background: #FBF7F0; border: 1px solid var(--border); border-radius: 8px; font-size: 12px; display: flex; align-items: center; justify-content: space-between;">
+                    <span style="color: #4A4842;"><strong style="color: #111;">Zone</strong> fills your safe forehand approach gap</span>
+                    <span style="color: #7C0236; font-weight: 800;">→</span>
+                  </div>
+                  <div style="padding: 8px 10px; background: #FBF7F0; border: 1px solid var(--border); border-radius: 8px; font-size: 12px; display: flex; align-items: center; justify-content: space-between; margin-top: 6px;">
+                    <span style="color: #4A4842;"><strong style="color: #111;">Sapphire</strong> fills your easy distance driver gap</span>
+                    <span style="color: #7C0236; font-weight: 800;">→</span>
+                  </div>
+                  <div style="padding: 8px 10px; background: #FBF7F0; border: 1px solid var(--border); border-radius: 8px; font-size: 12px; margin-top: 6px;">
+                    <span style="color: #4A4842;"><strong style="color: #111;">Fireball</strong> fills your wind-safe fairway gap</span>
+                  </div>
+                </div>
+              </div>
+              <p class="feature-caption">One disc per gap, sourced from DiscList rankings.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="signup-section">
-        <div class="signup-inner" id="signup-inner">
-          <p class="eyebrow">Free disc golf tool</p>
-          <h2>Most bag advice<br>is wrong.</h2>
-          <p class="signup-body">Not wrong in an obvious way. Wrong in the way that feels right — because it is based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. The disc you think you need and the disc your bag is actually missing are rarely the same thing. BagIQ works out the difference. Get updates on new features and things worth knowing about bags and discs. No filler.</p>
+      <!-- DISC DETOX -->
+      <section class="detox-section" id="detox">
+        <div class="b-container">
+          <div class="detox-grid">
+            <div class="detox-text">
+              <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #F9447D;">Disc Detox</p>
+              <h2 class="detox-headline">
+                Two discs.<br>One slot.
+              </h2>
+              <p class="detox-description">
+                Carrying two discs that do the same job is the most common bag mistake.
+                Disc Detox stacks any pair side by side — same flight class, same stability — so you can decide which one earns its place, and which one rides the bench.
+              </p>
+
+              <div class="detox-modes">
+                <div class="detox-mode">
+                  <div class="detox-icon">◐</div>
+                  <div>
+                    <div class="detox-mode-title">Conservative mode</div>
+                    <div class="detox-mode-desc">Only nudges obvious duplicates and protects trusted discs.</div>
+                  </div>
+                </div>
+                <div class="detox-mode">
+                  <div class="detox-icon">◑</div>
+                  <div>
+                    <div class="detox-mode-title">Aggressive mode</div>
+                    <div class="detox-mode-desc">Tightens further — flags anything that looks like a near-duplicate.</div>
+                  </div>
+                </div>
+                <div class="detox-mode">
+                  <div class="detox-icon">◒</div>
+                  <div>
+                    <div class="detox-mode-title">Lock favourites</div>
+                    <div class="detox-mode-desc">Mark the disc you will never drop; Detox works around it.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detox-preview">
+              <div class="detox-header">
+                <h3>Disc Detox</h3>
+                <div class="detox-modes-toggle">
+                  <span class="mode-btn mode-btn-active">Conservative</span>
+                  <span class="mode-btn">Aggressive</span>
+                </div>
+              </div>
+              <p class="detox-subtitle">These discs do the same job.</p>
+
+              <div class="overlap-callout">
+                <div style="font-size: 10px; font-weight: 800; color: #C66510; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px;">Overlap</div>
+                <div style="font-size: 15px; font-weight: 700; color: #111;">These discs overlap</div>
+                <div style="font-size: 13px; color: #4A4842; margin-top: 3px;">You marked both for similar jobs, and they land in the same part of the map. You probably do not need both.</div>
+              </div>
+
+              <div class="detox-cards">
+                <div class="detox-card">
+                  <div class="detox-card-header">
+                    <div class="detox-circle">TB</div>
+                    <div>
+                      <div class="detox-card-name">TeeBird</div>
+                      <div class="detox-card-note">You trust this one more</div>
+                    </div>
+                  </div>
+                  <div class="flight-chips">
+                    <div class="flight-chip flight-chip-speed"><div class="chip-label">SPEED</div><div class="chip-value">7</div></div>
+                    <div class="flight-chip flight-chip-glide"><div class="chip-label">GLIDE</div><div class="chip-value">5</div></div>
+                    <div class="flight-chip flight-chip-turn"><div class="chip-label">TURN</div><div class="chip-value">0</div></div>
+                    <div class="flight-chip flight-chip-fade"><div class="chip-label">FADE</div><div class="chip-value">2</div></div>
+                  </div>
+                  <div class="detox-buttons">
+                    <button class="detox-btn detox-btn-keep" style="border-color: #27AE60;">Keep</button>
+                    <button class="detox-btn">Remove</button>
+                    <button class="detox-btn">🔒 Lock</button>
+                  </div>
+                </div>
+
+                <div class="detox-card">
+                  <div class="detox-card-header">
+                    <div class="detox-circle" style="background: #E67E22;">L</div>
+                    <div>
+                      <div class="detox-card-name">Leopard</div>
+                      <div class="detox-card-note">This one rarely gets used</div>
+                    </div>
+                  </div>
+                  <div class="flight-chips">
+                    <div class="flight-chip flight-chip-speed"><div class="chip-label">SPEED</div><div class="chip-value">7</div></div>
+                    <div class="flight-chip flight-chip-glide"><div class="chip-label">GLIDE</div><div class="chip-value">5</div></div>
+                    <div class="flight-chip flight-chip-turn"><div class="chip-label">TURN</div><div class="chip-value">0</div></div>
+                    <div class="flight-chip flight-chip-fade"><div class="chip-label">FADE</div><div class="chip-value">2</div></div>
+                  </div>
+                  <div class="detox-buttons">
+                    <button class="detox-btn">Keep</button>
+                    <button class="detox-btn detox-btn-remove" style="border-color: #D32F2F;">Remove</button>
+                    <button class="detox-btn">🔒 Lock</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POWERED BY DISCLIST -->
+      <section class="powered-section">
+        <div class="b-container">
+          <div class="powered-grid">
+            <div class="powered-text">
+              <p class="b-eyebrow">Built on real data</p>
+              <h2>Powered by DiscList™.</h2>
+              <p class="powered-description">
+                BagIQ is powered by DiscList, the same data behind The DiscList weekly rankings. Recommendations are based on flight classification, capability tags, and real player data. Not guesswork. Not paid placements.
+              </p>
+              <p class="powered-note">
+                The affiliate star (★) shows when we earn a small commission. It never affects which disc we recommend.
+              </p>
+            </div>
+
+            <div class="powered-picks">
+              <div style="font-size: 11px; font-weight: 800; color: #8A8478; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px;">Top fixes for your Speed 9 gap</div>
+              <div class="fix-rows">
+                <div class="fix-row">
+                  <div class="fix-rank">01</div>
+                  <div class="fix-info">
+                    <div class="fix-brand">Latitude 64</div>
+                    <div class="fix-name">River</div>
+                    <div class="fix-class" style="color: #1F6FA8;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #3498DB; display: inline-block; margin-right: 6px;"></span>True Flight</div>
+                  </div>
+                  <div class="fix-meta">
+                    <div style="font-size: 10px; color: #7C0236; font-weight: 800; letter-spacing: 0.1em; margin-bottom: 4px;">★ TOP</div>
+                    <div style="font-family: Manrope; font-size: 18px; font-weight: 800; color: #111;">£14</div>
+                    <div style="font-size: 11px; color: #1B7B40; font-weight: 600; margin-top: 2px;">● In stock · 3 retailers</div>
+                  </div>
+                </div>
+
+                <div class="fix-row">
+                  <div class="fix-rank">02</div>
+                  <div class="fix-info">
+                    <div class="fix-brand">Innova</div>
+                    <div class="fix-name">Leopard3</div>
+                    <div class="fix-class" style="color: #6C3B85;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #9B59B6; display: inline-block; margin-right: 6px;"></span>Progressive Turn</div>
+                  </div>
+                  <div class="fix-meta">
+                    <div style="font-family: Manrope; font-size: 18px; font-weight: 800; color: #111;">£12</div>
+                    <div style="font-size: 11px; color: #8A8478; font-weight: 600; margin-top: 2px;">● In stock · 2 retailers</div>
+                  </div>
+                </div>
+
+                <div class="fix-row">
+                  <div class="fix-rank">03</div>
+                  <div class="fix-info">
+                    <div class="fix-brand">Discraft</div>
+                    <div class="fix-name">Heat</div>
+                    <div class="fix-class" style="color: #6C3B85;"><span style="width: 6px; height: 6px; border-radius: 50%; background: #9B59B6; display: inline-block; margin-right: 6px;"></span>Early Turn</div>
+                  </div>
+                  <div class="fix-meta">
+                    <div style="font-family: Manrope; font-size: 18px; font-weight: 800; color: #111;">£15</div>
+                    <div style="font-size: 11px; color: #8A8478; font-weight: 600; margin-top: 2px;">● Low stock</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THREE STEPS -->
+      <section class="steps-section" id="how">
+        <div class="b-container">
+          <div class="steps-header">
+            <p class="b-eyebrow">How it works</p>
+            <h2>Three steps. Two minutes.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3>Add your discs</h3>
+              <p>Search by name. Tap to add. Takes about 30 seconds for a full bag.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3>Tell BagIQ how you throw</h3>
+              <p>Forehand, backhand, high release, low and flat. Good enough is good enough.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3>Get your Bag Map</h3>
+              <p>A clear picture of what your bag does, what it is missing, and what disc fixes it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final-cta">
+        <div class="b-container-narrow">
+          <p style="font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65);">Free disc golf tool</p>
+          <h2 class="cta-headline">
+            Most bag advice<br>is wrong.
+          </h2>
+          <p class="cta-description">
+            Not wrong in an obvious way. Wrong in the way that feels right — because it is based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. BagIQ works out the difference.
+          </p>
 
           <form class="signup-form" id="signup-form" novalidate>
-            <div class="signup-fields">
-              <label for="signup-email" class="sr-only">Email address</label>
-              <input
-                type="email"
-                id="signup-email"
-                name="email"
-                placeholder="your@email.com"
-                autocomplete="email"
-                required
-                aria-required="true"
-              >
-              <button type="submit" class="signup-btn" id="signup-btn">Join the list</button>
-            </div>
-            <div class="signup-consent">
-              <label class="consent-label">
-                <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
-                <span>Sign me up. I want to know when BagIQ launches and get the occasional update on bags and discs. I can unsubscribe any time.</span>
-              </label>
-            </div>
-            <!-- Honeypot: leave blank -->
+            <input
+              type="email"
+              placeholder="your@email.com"
+              name="email"
+              required
+              autocomplete="email"
+              aria-required="true"
+            >
+            <button type="submit" class="b-pill b-pill-d">Join the list</button>
             <input type="text" name="website" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none">
-            <p class="signup-message" id="signup-message" aria-live="polite"></p>
           </form>
+          <p class="signup-note">Occasional update on bags, discs, and BagIQ releases. Unsubscribe any time.</p>
         </div>
       </section>
 
-      <section class="powered-by">
-        <p>Powered by <a href="https://thedisclist.com/" rel="noopener">DiscList™</a> data. Built by <a href="https://golfwithdiscs.com/" rel="noopener">Golf With Discs</a>.</p>
-      </section>
-
+      <!-- FOOTER -->
       <footer class="site-footer">
-        <p>&copy; 2026 Golf With Discs. BagIQ is a standalone product licensed for white-label use by disc golf retailers and brands. <a href="mailto:hello@bagiq.app">hello@bagiq.app</a> &middot; <a href="/privacy.html">Privacy</a></p>
+        <div class="b-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div style="font-size: 13px; color: #4A4842;">
+            Powered by <a href="#" style="color: #7C0236; font-weight: 700; border-bottom: 1px solid currentColor;">DiscList™</a> data. Built by <a href="#" style="color: #7C0236; font-weight: 700; border-bottom: 1px solid currentColor;">Golf With Discs</a>.
+          </div>
+          <div style="font-size: 13px; color: #8A8478; display: flex; gap: 18px;">
+            <a href="#">Licensing</a>
+            <a href="#">Privacy</a>
+            <a href="mailto:hello@bagiq.app">hello@bagiq.app</a>
+          </div>
+        </div>
       </footer>
     </main>
+
     <script>
-      (function () {
-        var form = document.getElementById("signup-form");
-        var btn = document.getElementById("signup-btn");
-        var msg = document.getElementById("signup-message");
+      // Identity chip animation
+      const phrases = [
+        'Overstable-heavy bag missing a reliable straight flyer',
+        'Putter-heavy bag with no controlled fairway',
+        'Backhand-only bag missing a forehand line',
+        'Distance-loaded bag with no touch upshot',
+      ];
+      let phraseIdx = 0;
+      const identityText = document.querySelector('.identity-text');
+      setInterval(() => {
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        identityText.textContent = phrases[phraseIdx];
+      }, 2400);
 
-        form.addEventListener("submit", async function (e) {
-          e.preventDefault();
+      // Signup form
+      const form = document.getElementById('signup-form');
+      form?.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (form.elements.website.value) return;
 
-          // Honeypot check
-          if (form.elements.website.value) return;
+        const email = form.elements.email.value.trim();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = 'Joining…';
 
-          var email = form.elements.email.value.trim();
-          var consent = form.elements.consent.checked;
-
-          if (!consent) {
-            showMessage("Please tick the box above to confirm you want the email.", "error");
-            return;
+        try {
+          const res = await fetch('https://data.bagiq.app/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email }),
+          });
+          const data = await res.json();
+          if (data.ok) {
+            btn.textContent = '✓ Joined!';
+            form.style.opacity = '0.6';
           }
-
-          btn.disabled = true;
-          btn.textContent = "Joining the list…";
-          msg.textContent = "";
-
-          try {
-            var res = await fetch("https://data.bagiq.app/subscribe", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ email: email }),
-            });
-            var data = await res.json();
-            if (data.ok) {
-              document.getElementById("signup-inner").innerHTML =
-                '<p class="eyebrow">You\'re on the list</p>' +
-                '<h2>Good call.</h2>' +
-                '<p class="signup-body">We\'ll share useful things about bags and discs, and tell you when anything changes worth knowing about. In the meantime, the app is live now. No account required.</p>' +
-                '<a href="https://app.bagiq.app/" class="cta-btn" style="display:inline-block;margin-top:8px">Open BagIQ &rarr;</a>';
-            } else {
-              showMessage("Something went wrong. Please try again.", "error");
-              btn.disabled = false;
-              btn.textContent = "Join the list";
-            }
-          } catch (_) {
-            showMessage("Could not connect. Please try again.", "error");
-            btn.disabled = false;
-            btn.textContent = "Join the list";
-          }
-        });
-
-        function showMessage(text, type) {
-          msg.textContent = text;
-          msg.className = "signup-message signup-message--" + type;
+        } catch (err) {
+          btn.disabled = false;
+          btn.textContent = 'Try again';
         }
-      })();
+      });
     </script>
   </body>
 </html>
