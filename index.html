@@ -501,10 +501,16 @@
               autocomplete="email"
               aria-required="true"
             >
+            <div class="signup-consent">
+              <label class="consent-label">
+                <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
+                <span>Sign me up. I want to know when BagIQ launches and get the occasional update on bags and discs. I can unsubscribe any time.</span>
+              </label>
+            </div>
             <button type="submit" class="b-pill b-pill-d">Join the list</button>
             <input type="text" name="website" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none">
+            <p class="signup-message" id="signup-message" aria-live="polite"></p>
           </form>
-          <p class="signup-note">Occasional update on bags, discs, and BagIQ releases. Unsubscribe any time.</p>
         </div>
       </section>
 
@@ -538,6 +544,63 @@
         identityText.textContent = phrases[phraseIdx];
       }, 2400);
 
+      // Bag Map visualization
+      const bagMapSvg = document.querySelector('.bag-map');
+      if (bagMapSvg) {
+        const discs = [
+          { x: 80, y: 150, color: '#27AE60', letter: 'P' },
+          { x: 150, y: 200, color: '#3498DB', letter: 'M' },
+          { x: 220, y: 160, color: '#E67E22', letter: 'F' },
+          { x: 280, y: 120, color: '#7C0236', letter: 'D' },
+          { x: 350, y: 100, color: '#9B59B6', letter: 'X' },
+        ];
+
+        // Grid lines
+        for (let i = 0; i < 6; i++) {
+          const x = 80 + i * 100;
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', x);
+          line.setAttribute('y1', '40');
+          line.setAttribute('x2', x);
+          line.setAttribute('y2', '360');
+          line.setAttribute('stroke', '#ddd');
+          line.setAttribute('stroke-dasharray', '2,3');
+          bagMapSvg.appendChild(line);
+        }
+
+        // Axes
+        const axisX = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        axisX.setAttribute('x1', '50');
+        axisX.setAttribute('y1', '200');
+        axisX.setAttribute('x2', '600');
+        axisX.setAttribute('y2', '200');
+        axisX.setAttribute('stroke', '#999');
+        axisX.setAttribute('stroke-width', '2');
+        bagMapSvg.appendChild(axisX);
+
+        // Discs
+        discs.forEach(disc => {
+          const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          circle.setAttribute('cx', disc.x);
+          circle.setAttribute('cy', disc.y);
+          circle.setAttribute('r', '16');
+          circle.setAttribute('fill', disc.color);
+          circle.setAttribute('stroke', '#fff');
+          circle.setAttribute('stroke-width', '2');
+          bagMapSvg.appendChild(circle);
+
+          const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          text.setAttribute('x', disc.x);
+          text.setAttribute('y', disc.y + 5);
+          text.setAttribute('text-anchor', 'middle');
+          text.setAttribute('font-weight', '800');
+          text.setAttribute('font-size', '14');
+          text.setAttribute('fill', '#fff');
+          text.textContent = disc.letter;
+          bagMapSvg.appendChild(text);
+        });
+      }
+
       // Signup form
       const form = document.getElementById('signup-form');
       form?.addEventListener('submit', async function (e) {
@@ -545,9 +608,20 @@
         if (form.elements.website.value) return;
 
         const email = form.elements.email.value.trim();
+        const consent = form.elements.consent.checked;
+        const msg = document.getElementById('signup-message');
         const btn = form.querySelector('button[type="submit"]');
+
+        if (!consent) {
+          msg.textContent = 'Please tick the box above to confirm you want the email.';
+          msg.className = 'signup-message signup-message--error';
+          return;
+        }
+
         btn.disabled = true;
         btn.textContent = 'Joining…';
+        msg.textContent = '';
+        msg.className = 'signup-message';
 
         try {
           const res = await fetch('https://data.bagiq.app/subscribe', {
@@ -559,10 +633,16 @@
           if (data.ok) {
             btn.textContent = '✓ Joined!';
             form.style.opacity = '0.6';
+            msg.textContent = 'Welcome! Check your inbox.';
+            msg.className = 'signup-message signup-message--success';
+          } else {
+            throw new Error(data.message || 'Failed to subscribe');
           }
         } catch (err) {
           btn.disabled = false;
           btn.textContent = 'Try again';
+          msg.textContent = 'Something went wrong. Please try again.';
+          msg.className = 'signup-message signup-message--error';
         }
       });
     </script>

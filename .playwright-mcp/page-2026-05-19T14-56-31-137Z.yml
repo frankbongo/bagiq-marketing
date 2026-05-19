@@ -1,0 +1,282 @@
+- main [ref=e2]:
+  - navigation [ref=e3]:
+    - img "BagIQ" [ref=e4]
+    - generic [ref=e5]:
+      - link "The Bag Map" [ref=e6] [cursor=pointer]:
+        - /url: "#bagmap"
+      - link "Disc Detox" [ref=e7] [cursor=pointer]:
+        - /url: "#detox"
+      - link "How it works" [ref=e8] [cursor=pointer]:
+        - /url: "#how"
+      - link "FAQ" [ref=e9] [cursor=pointer]:
+        - /url: "#faq"
+      - link "Launch BagIQ →" [ref=e10] [cursor=pointer]:
+        - /url: https://app.bagiq.app/
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: Overstable-heavy bag missing a reliable straight flyer
+      - heading "Fix your bag in under a minute." [level=1] [ref=e14]:
+        - text: Fix your bag
+        - text: in under a minute.
+      - paragraph [ref=e15]: BagIQ spots gaps, overlap, and the exact disc that fixes it. Based on how you actually throw, not what the disc says it should do.
+      - generic [ref=e16]:
+        - link "Launch BagIQ →" [ref=e17] [cursor=pointer]:
+          - /url: https://app.bagiq.app/
+        - link "See a sample bag" [ref=e18] [cursor=pointer]:
+          - /url: "#bagmap"
+      - generic [ref=e19]:
+        - generic [ref=e20]: ✓ Free forever
+        - generic [ref=e21]: ✓ No account no signup
+        - generic [ref=e22]: ✓ Any device mobile, tablet, desktop
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Chaos bag
+          - generic [ref=e29]: There are useful discs in here, but too many are arguing for the same job.
+          - generic [ref=e30]: Coverage 78%
+        - img [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: Fill the gap
+        - heading "safe forehand approach" [level=3] [ref=e35]
+        - paragraph [ref=e36]: This stops you trying to force a touchy disc into a windy approach. Closest option is the Omega, but you do not fully trust it for this job.
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: OVERSTABLE
+            - generic [ref=e40]: ZO
+            - generic [ref=e41]: Discraft
+            - generic [ref=e42]: Zone
+            - generic [ref=e43]: Midrange
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e47]: SPEED
+                - generic [ref=e48]: "4"
+              - generic [ref=e49]:
+                - generic [ref=e50]: GLIDE
+                - generic [ref=e51]: "3"
+              - generic [ref=e52]:
+                - generic [ref=e53]: TURN
+                - generic [ref=e54]: "0"
+              - generic [ref=e55]:
+                - generic [ref=e56]: FADE
+                - generic [ref=e57]: "3"
+            - paragraph [ref=e58]: This gives you a safer forehand option in wind.
+            - 'link "DiscList #16 →" [ref=e59] [cursor=pointer]':
+              - /url: "#"
+            - generic [ref=e60]: Assured Fade Headwind Safe Utility Fade ?
+            - generic [ref=e61]:
+              - button "Where to buy" [ref=e62]
+              - button "+ Add to bag" [ref=e63]
+  - separator [ref=e64]
+  - generic [ref=e66]:
+    - generic [ref=e67]:
+      - paragraph [ref=e68]: Decision engine, not inventory tracker
+      - heading "BagIQ answers three questions every disc golfer asks." [level=2] [ref=e69]
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - text: Gap analysis
+        - heading "What's missing?" [level=3] [ref=e72]
+        - paragraph [ref=e73]: Your bag has shots you cannot reliably make. BagIQ tells you which slot is empty and what kind of disc fills it.
+        - img [ref=e75]:
+          - generic [ref=e78]: +
+          - generic [ref=e79]: OS FW
+          - generic [ref=e81]: +
+          - generic [ref=e82]: US DRV
+          - generic [ref=e84]: A
+          - generic [ref=e86]: Z
+          - generic [ref=e88]: CC
+          - generic [ref=e90]: TB
+          - generic [ref=e92]: W
+          - generic [ref=e93]: SPEED →
+        - paragraph [ref=e94]: Pink + markers show shots your bag can't cover.
+      - generic [ref=e95]:
+        - text: Overlap
+        - heading "What's redundant?" [level=3] [ref=e96]
+        - paragraph [ref=e97]: Two discs doing the same job? Disc Detox compares them side by side so you know which one to keep.
+        - img [ref=e99]:
+          - generic [ref=e102]: OVERLAP
+          - generic [ref=e104]: A
+          - generic [ref=e106]: Z
+          - generic [ref=e108]: G
+          - generic [ref=e110]: W
+          - generic [ref=e111]: SPEED →
+        - paragraph [ref=e112]: Two discs in the same slot get flagged for Detox.
+      - generic [ref=e113]:
+        - text: Next disc
+        - heading "What should I buy?" [level=3] [ref=e114]
+        - paragraph [ref=e115]: DiscList™ picks based on how you actually throw — with live retailer stock and price.
+        - generic [ref=e117]:
+          - generic [ref=e118]: DiscList™ picks for your gaps
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - strong [ref=e121]: Zone
+              - text: fills your safe forehand approach gap
+            - generic [ref=e122]: →
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - strong [ref=e125]: Sapphire
+              - text: fills your easy distance driver gap
+            - generic [ref=e126]: →
+          - generic [ref=e128]:
+            - strong [ref=e129]: Fireball
+            - text: fills your wind-safe fairway gap
+        - paragraph [ref=e130]: One disc per gap, sourced from DiscList rankings.
+  - generic [ref=e133]:
+    - generic [ref=e134]:
+      - paragraph [ref=e135]: Disc Detox
+      - heading "Two discs. One slot." [level=2] [ref=e136]:
+        - text: Two discs.
+        - text: One slot.
+      - paragraph [ref=e137]: Carrying two discs that do the same job is the most common bag mistake. Disc Detox stacks any pair side by side — same flight class, same stability — so you can decide which one earns its place, and which one rides the bench.
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: ◐
+          - generic [ref=e141]:
+            - generic [ref=e142]: Conservative mode
+            - generic [ref=e143]: Only nudges obvious duplicates and protects trusted discs.
+        - generic [ref=e144]:
+          - generic [ref=e145]: ◑
+          - generic [ref=e146]:
+            - generic [ref=e147]: Aggressive mode
+            - generic [ref=e148]: Tightens further — flags anything that looks like a near-duplicate.
+        - generic [ref=e149]:
+          - generic [ref=e150]: ◒
+          - generic [ref=e151]:
+            - generic [ref=e152]: Lock favourites
+            - generic [ref=e153]: Mark the disc you will never drop; Detox works around it.
+    - generic [ref=e154]:
+      - generic [ref=e155]:
+        - heading "Disc Detox" [level=3] [ref=e156]
+        - generic [ref=e157]: Conservative Aggressive
+      - paragraph [ref=e158]: These discs do the same job.
+      - generic [ref=e159]:
+        - generic [ref=e160]: Overlap
+        - generic [ref=e161]: These discs overlap
+        - generic [ref=e162]: You marked both for similar jobs, and they land in the same part of the map. You probably do not need both.
+      - generic [ref=e163]:
+        - generic [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: TB
+            - generic [ref=e167]:
+              - generic [ref=e168]: TeeBird
+              - generic [ref=e169]: You trust this one more
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: SPEED
+              - generic [ref=e173]: "7"
+            - generic [ref=e174]:
+              - generic [ref=e175]: GLIDE
+              - generic [ref=e176]: "5"
+            - generic [ref=e177]:
+              - generic [ref=e178]: TURN
+              - generic [ref=e179]: "0"
+            - generic [ref=e180]:
+              - generic [ref=e181]: FADE
+              - generic [ref=e182]: "2"
+          - generic [ref=e183]:
+            - button "Keep" [ref=e184]
+            - button "Remove" [ref=e185]
+            - button "🔒 Lock" [ref=e186]
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: L
+            - generic [ref=e190]:
+              - generic [ref=e191]: Leopard
+              - generic [ref=e192]: This one rarely gets used
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - generic [ref=e195]: SPEED
+              - generic [ref=e196]: "7"
+            - generic [ref=e197]:
+              - generic [ref=e198]: GLIDE
+              - generic [ref=e199]: "5"
+            - generic [ref=e200]:
+              - generic [ref=e201]: TURN
+              - generic [ref=e202]: "0"
+            - generic [ref=e203]:
+              - generic [ref=e204]: FADE
+              - generic [ref=e205]: "2"
+          - generic [ref=e206]:
+            - button "Keep" [ref=e207]
+            - button "Remove" [ref=e208]
+            - button "🔒 Lock" [ref=e209]
+  - generic [ref=e212]:
+    - generic [ref=e213]:
+      - paragraph [ref=e214]: Built on real data
+      - heading "Powered by DiscList™." [level=2] [ref=e215]
+      - paragraph [ref=e216]: BagIQ is powered by DiscList, the same data behind The DiscList weekly rankings. Recommendations are based on flight classification, capability tags, and real player data. Not guesswork. Not paid placements.
+      - paragraph [ref=e217]: The affiliate star (★) shows when we earn a small commission. It never affects which disc we recommend.
+    - generic [ref=e218]:
+      - generic [ref=e219]: Top fixes for your Speed 9 gap
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]: "01"
+          - generic [ref=e223]:
+            - generic [ref=e224]: Latitude 64
+            - generic [ref=e225]: River
+            - generic [ref=e226]: True Flight
+          - generic [ref=e228]:
+            - generic [ref=e229]: ★ TOP
+            - generic [ref=e230]: £14
+            - generic [ref=e231]: ● In stock · 3 retailers
+        - generic [ref=e232]:
+          - generic [ref=e233]: "02"
+          - generic [ref=e234]:
+            - generic [ref=e235]: Innova
+            - generic [ref=e236]: Leopard3
+            - generic [ref=e237]: Progressive Turn
+          - generic [ref=e239]:
+            - generic [ref=e240]: £12
+            - generic [ref=e241]: ● In stock · 2 retailers
+        - generic [ref=e242]:
+          - generic [ref=e243]: "03"
+          - generic [ref=e244]:
+            - generic [ref=e245]: Discraft
+            - generic [ref=e246]: Heat
+            - generic [ref=e247]: Early Turn
+          - generic [ref=e249]:
+            - generic [ref=e250]: £15
+            - generic [ref=e251]: ● Low stock
+  - generic [ref=e253]:
+    - generic [ref=e254]:
+      - paragraph [ref=e255]: How it works
+      - heading "Three steps. Two minutes." [level=2] [ref=e256]
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e259]: "1"
+        - heading "Add your discs" [level=3] [ref=e260]
+        - paragraph [ref=e261]: Search by name. Tap to add. Takes about 30 seconds for a full bag.
+      - generic [ref=e262]:
+        - generic [ref=e263]: "2"
+        - heading "Tell BagIQ how you throw" [level=3] [ref=e264]
+        - paragraph [ref=e265]: Forehand, backhand, high release, low and flat. Good enough is good enough.
+      - generic [ref=e266]:
+        - generic [ref=e267]: "3"
+        - heading "Get your Bag Map" [level=3] [ref=e268]
+        - paragraph [ref=e269]: A clear picture of what your bag does, what it is missing, and what disc fixes it.
+  - generic [ref=e271]:
+    - paragraph [ref=e272]: Free disc golf tool
+    - heading "Most bag advice is wrong." [level=2] [ref=e273]:
+      - text: Most bag advice
+      - text: is wrong.
+    - paragraph [ref=e274]: Not wrong in an obvious way. Wrong in the way that feels right — because it is based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. BagIQ works out the difference.
+    - generic [ref=e275]:
+      - textbox "your@email.com" [ref=e276]
+      - button "Join the list" [ref=e277]
+    - paragraph [ref=e278]: Occasional update on bags, discs, and BagIQ releases. Unsubscribe any time.
+  - generic [ref=e280]:
+    - generic [ref=e281]:
+      - text: Powered by
+      - link "DiscList™" [ref=e282] [cursor=pointer]:
+        - /url: "#"
+      - text: data. Built by
+      - link "Golf With Discs" [ref=e283] [cursor=pointer]:
+        - /url: "#"
+      - text: .
+    - generic [ref=e284]:
+      - link "Licensing" [ref=e285] [cursor=pointer]:
+        - /url: "#"
+      - link "Privacy" [ref=e286] [cursor=pointer]:
+        - /url: "#"
+      - link "hello@bagiq.app" [ref=e287] [cursor=pointer]:
+        - /url: mailto:hello@bagiq.app
