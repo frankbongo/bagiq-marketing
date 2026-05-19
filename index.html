@@ -631,10 +631,7 @@
           });
           const data = await res.json();
           if (data.ok) {
-            btn.textContent = '✓ Joined!';
-            form.style.opacity = '0.6';
-            msg.textContent = 'Welcome! Check your inbox.';
-            msg.className = 'signup-message signup-message--success';
+            document.getElementById('signup-inner').innerHTML = '<p class="eyebrow">You\'re on the list</p><h2>Good call.</h2><p class="signup-body">We\'ll share useful things about bags and discs, and tell you when anything changes worth knowing about. In the meantime, the app is live now. No account required.</p><a href="https://app.bagiq.app/" class="cta-btn" style="display:inline-block;margin-top:8px">Open BagIQ &rarr;</a>';
           } else {
             throw new Error(data.message || 'Failed to subscribe');
           }
