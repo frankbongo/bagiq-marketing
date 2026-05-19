@@ -492,25 +492,27 @@
             Not wrong in an obvious way. Wrong in the way that feels right — because it is based on flight numbers and what the disc is supposed to do, rather than what you actually do with it. BagIQ works out the difference.
           </p>
 
-          <form class="signup-form" id="signup-form" novalidate>
-            <input
-              type="email"
-              placeholder="your@email.com"
-              name="email"
-              required
-              autocomplete="email"
-              aria-required="true"
-            >
-            <div class="signup-consent">
-              <label class="consent-label">
-                <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
-                <span>Sign me up. I want to know when BagIQ launches and get the occasional update on bags and discs. I can unsubscribe any time.</span>
-              </label>
-            </div>
-            <button type="submit" class="b-pill b-pill-d">Join the list</button>
-            <input type="text" name="website" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none">
-            <p class="signup-message" id="signup-message" aria-live="polite"></p>
-          </form>
+          <div id="signup-inner">
+            <form class="signup-form" id="signup-form" novalidate>
+              <input
+                type="email"
+                placeholder="your@email.com"
+                name="email"
+                required
+                autocomplete="email"
+                aria-required="true"
+              >
+              <div class="signup-consent">
+                <label class="consent-label">
+                  <input type="checkbox" id="signup-consent" name="consent" required aria-required="true">
+                  <span>Sign me up. I want to know when BagIQ launches and get the occasional update on bags and discs. I can unsubscribe any time.</span>
+                </label>
+              </div>
+              <button type="submit" class="b-pill b-pill-d">Join the list</button>
+              <input type="text" name="website" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none">
+              <p class="signup-message" id="signup-message" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </section>
 
